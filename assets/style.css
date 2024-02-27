@@ -166,6 +166,11 @@ input:focus {
     cursor: pointer;
 }
 
+.login-button:disabled {
+    background-color: var(--light-grey);
+    border: none;
+}
+
 .login-button:hover {
     border: 1px solid var(--medium-grey);
 }
