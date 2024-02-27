@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+:root {
+  --white: #FFF;
+  --whitesmoke: #F9F9F9;
+  --light-grey: #ECECEC;
+  --grey: #C4C4C4;
+  --medium-grey: #A7A7A7;
+  --deep-grey: #343434;
+  --black: #000000;
+  --blue: #1B77F3;
+  --red: #CF3C3F;
+  --green: #0F780F;
+}
+
+main{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.login {
+    width: 100%;
+    max-width: 500px;
+    padding: clamp(35px, 8%, 70px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-riot{
+    width: 130px;
+    margin-bottom: 40px;
+}
+
+.login_title{
+    font-size: 24px;
+    color: var(--deep-grey);
+    margin-bottom: 30px;
+}
+
+.usuario_label{
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--deep-grey);
+    background-color: var(--light-grey);
+    border: 2px solid rgba(0, 0, 0, 0) ;
+    outline: none;
+    border-radius: 5px;
+    padding: 25px 10px 10px;
+}
+
+input:focus {
+    background-color: var(--whitesmoke);
+    border: 2px solid var(--deep-grey);
+}
+
+.usuario_label span {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--medium-grey);
+    position: absolute;
+    text-transform: uppercase;
+    cursor: text;
+    margin: 20px;
+    transition: all 200ms ease;
+}
+
+.usuario_label .span-active {
+    font-size: 0.7em;
+    margin: 8px 10px;
+}
+
+.login_icons{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.login_icons img{
+    width: 15px;
+}
+
+.icon_button{
+    width: 25%;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.login_icons .icon_button:nth-child(1){
+    background-color: var(--blue);
+}
+
+.login_icons .icon_button:nth-child(2){
+    background-color: var(--white);
+}
+
+.login_icons .icon_button:nth-child(3){
+    background-color: var(--black);
+}
+
+.login_icons .icon_button:nth-child(4){
+    background-color: var(--green);
+}
+
+.usuario_label--checkbox{
+   width: 100%;
+   margin: 15px 0 50px;
+   font-size: 14px;
+   font-weight: 500;
+   display: flex;
+   align-items: center;
+}
+
+.input--checkbox{
+    width: 15px;
+    height: 15px;
+    background-color: var(--light-grey);
+    margin-right: 8px;
+    border-radius: 3px;
+}
+
+.input--checkbox:checked {
+    background-color: var(--red);
+}
+
+.login-button{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    border: 1px solid var(--whitesmoke);
+    background-color: var(--light-grey);
+    cursor: pointer;
+}
+
+.login-button img{
+    width: 100%;
+    height: 100%;
+}
+
+.login_link{
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: var(--medium-grey);
+}
