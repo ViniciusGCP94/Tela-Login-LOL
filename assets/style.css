@@ -28,7 +28,7 @@ main{
     width: 100%;
     height: 100vh;
     max-width: 400px;
-    padding: clamp(35px, 8%, 70px);
+    padding: clamp(35px, 8%, 60px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -204,4 +204,121 @@ input:focus {
 .wallpaper img {
     width: 100%;
     height: 100%;
+}
+
+
+@media (max-width:850px) {
+
+    main{
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login{
+        max-width: 600px;
+        height: 70vh;
+        padding: 20px;
+    }
+
+    .logo-riot{
+        width: 300px;
+    }
+    
+    .login_title{
+        font-size: 40px;
+    }
+
+    .input {
+        font-size: 25px;
+    }
+
+    .usuario_label span {
+        font-size: 22px;
+    }
+
+    .icon_button{
+        height: 50px;
+    }
+
+    .login_icons img{
+        width: 30px;
+    }
+
+    .usuario_label--checkbox{
+        font-size: 22px;
+    }
+
+    .input--checkbox{
+        width: 20px;
+        height: 20px;
+    }
+
+    .login-button{
+        width: 70px;
+        height: 70px;
+    }
+    .wallpaper{
+        display: none;
+    }
+
+    .login_link{
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width:500px) {
+
+    .login{
+        max-width: 350px;
+        height: 90vh;
+        padding: 20px;
+    }
+
+    .logo-riot{
+        width: 200px;
+    }
+    
+    .login_title{
+        font-size: 30px;
+    }
+
+    .input {
+        font-size: 16px;
+    }
+
+    .usuario_label span {
+        font-size: 16px;
+    }
+
+    .icon_button{
+        height: 30px;
+    }
+
+    .login_icons img{
+        width: 20px;
+    }
+
+    .usuario_label--checkbox{
+        margin-top: 28px;
+        font-size: 22px;
+    }
+
+    .input--checkbox{
+        width: 20px;
+        height: 20px;
+    }
+
+    .login-button{
+        width: 60px;
+        height: 60px;
+    }
+    .wallpaper{
+        display: none;
+    }
+
+    .login_link{
+        font-size: 18px;
+    }
 }
